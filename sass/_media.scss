@@ -1,0 +1,131 @@
+@media screen and (max-width: 1280px) {
+	aside {
+		.triangle {
+			border-width: 200px 0 0 380px;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			'sidebar'
+			'main';
+	}
+
+	main {
+		padding: 15px 30px;
+	}
+
+	aside {
+		align-items: center;
+		display: flex;
+		justify-content: space-evenly;
+		padding: 15px;
+
+		h1 {
+			font-size: 2.8125rem;
+			line-height: 45px;
+		}
+
+		.picture {
+			margin: 25px 0 0 0;
+			width: 100%;
+		}
+
+		.personal-information {
+			border-top: none;
+		}
+
+		.triangle {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
+	main {
+		padding: 15px;
+
+		.main-section {
+			padding: 10px 0;
+
+			h2 {
+				font-size: 1.25rem;
+			}
+		}
+
+		.work-experience,
+		.education,
+		.languages {
+			h3 {
+				font-size: 1rem;
+				margin-top: 10px;
+			}
+
+			p {
+				font-size: 1rem;
+			}
+		}
+
+		.skills {
+			.photoshop::after {
+				content: 'Photoshop';
+			}
+			.after-effects {
+				width: 40%;
+
+				&::after {
+					content: 'After Effects';
+				}
+			}
+			.premiere {
+				width: 50%;
+
+				&::after {
+					content: 'Premiere Pro';
+				}
+			}
+			.office::after {
+				content: 'Office';
+			}
+
+			.photoshop::after,
+			.after-effects::after,
+			.premiere::after,
+			.office::after {
+				font-size: 12px;
+				margin: 0 5px;
+			}
+		}
+	}
+
+	aside {
+		display: flex;
+		flex-direction: column;
+		padding: 15px;
+
+		h1 {
+			font-size: 3.4375rem;
+			line-height: 50px;
+		}
+
+		.personal-information {
+			padding: 10px 0;
+
+			h2 {
+				font-size: 1.25rem;
+				margin-bottom: 10px;
+			}
+
+			p {
+				font-size: 1rem;
+			}
+
+			a {
+				font-size: 1rem;
+			}
+		}
+	}
+}
